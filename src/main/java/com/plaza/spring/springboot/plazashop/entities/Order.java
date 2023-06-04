@@ -18,19 +18,19 @@ public class Order implements Serializable {
     private int order_id;
     @OneToOne
     @JoinColumn(name = "customer_id")
-    private Customer customer_id;
+    private User customer_id;
     @Column(name = "address")
     private String address;
     @Column(name = "date")
     private LocalDate date;
     @OneToMany(mappedBy = "order_id", cascade = CascadeType.ALL)
     private List<Instance> instanceList;
-    public Order(Customer customer_id, String address, LocalDate date) {
+    public Order(User customer_id, String address, LocalDate date) {
         this.customer_id = customer_id;
         this.address = address;
         this.date = date;
     }
-    public Order(Customer customer_id, String address, LocalDate date, List<Instance> instanceList) {
+    public Order(User customer_id, String address, LocalDate date, List<Instance> instanceList) {
         this.customer_id = customer_id;
         this.address = address;
         this.date = date;

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Favicon ===============-->
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!--=============== Boxicons ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== Custom StyleSheet ===============-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>PLAZA</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="row d-flex container">
+          <a href="main.html" class="logo d-flex">PLA<span class="yellow">ZA</span></a>
+        </div>
+      </nav>
+
+      <!--=============== Home ===============-->
+      <div class="home">
+        <div class="row container">
+          <div class="col">
+            <h1>
+              Получи блюдо <br />
+              прямо у <br />
+              <span class="color">своей двери</span>
+            </h1>
+          </div>
+          <div class="col">
+            <img src="/images/delivery-guy.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!--=============== SignUp Form ===============-->
+      <div class="wrapper">
+        <form action="" class="form" th:action="@{/registration}">
+          <h2>Регистрация</h2>
+          <div class="control">
+            <label >Введите логин:</label>
+            <input type="text" placeholder="Enter Your Login" />
+          </div>
+          <div class="control">
+            <label >Введите фамилию:</label>
+            <input type="text" placeholder="Enter Your Surname" />
+          </div>
+          <div class="control">
+            <label >Введите имя:</label>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+          <div class="control">
+            <label >Введите телефон:</label>
+            <input type="tel" placeholder="Enter Your Telephone Number" />
+          </div>
+          
+          <div class="control">
+            <label >Введите почту:</label>
+            <input type="email" placeholder="Enter Your Email" />
+          </div>
+          <div class="control">
+            <label >Пароль:</label>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div class="log">
+            <a class="btn" href="start.html">Создать</a>
+          </div>
+        </form>
+      </div>
+    </header>
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>

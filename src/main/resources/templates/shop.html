@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Favicon ===============-->
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!--=============== Swiper CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--=============== Boxicons ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== Custom StyleSheet ===============-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>PLAZA</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header1">
+      <nav class="navbar">
+        <div class="row d-flex container">
+          <a href="main.html" class="logo d-flex">PLA<span class="yellow">ZA</span></a>
+          <ul class="nav-list d-flex">
+            <a href="shop.html">МАГАЗИН</a>
+            <span class="close d-flex"><i class="bx bx-x"></i></span>
+          </ul>
+          <div class="col d-flex">
+            <a href="shoppingcart.html">
+              <div class="cart-icon d-flex">
+                <i class="bx bx-shopping-bag"></i>
+                <span>0</span>
+              </div>
+            </a>
+            <a href="start.html" class="btn">Выйти</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="wrapper" id="zakazat">
+      <form action="" class="form">
+        <h2>Сколько вы хотите заказать?</h2>
+        <div class="control">
+          <label for="">Введите количество</label>
+          <input type="number" placeholder="Enter The Number" />
+        </div>
+      </form>
+      <div class="close-form">
+        <i class="bx bx-x"></i>
+      </div>
+    </div>
+    <!--=============== Recipes ===============-->
+    <section class="section recipes" id="recipes">
+        <div class="row container">
+          <div class="filters d-flex">
+            <span data-filter="All Product">Все продукты</span>
+            <span data-filter="Fast Food">Фастфуд</span>
+            <span data-filter="Rice Menu">Азиатская кухня</span>
+            <span data-filter="Desserts">Дессерты</span>
+            <span data-filter="Pizza">Пицца</span>
+            <span data-filter="Coffee">Кофе</span>
+          </div>
+          <div class="products">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper" id="products-wrapper">
+                <!-- 
+                  JS CODE
+                -->
+              </div>
+            </div>
+            <div class="pagination">
+              <div class="custom-pagination"></div>
+            </div>
+          </div>
+        </div>
+    </section>
+  
+      <!--=============== Swiper JS ===============-->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+      <!--=============== Custom JS ===============-->
+      <script src="/js/products.js"></script>
+      <script type="text/javascript" src="/js/main.js"></script>
+    </body>
+  </html>

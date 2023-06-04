@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== Favicon ===============-->
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!--=============== Swiper CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!--=============== Boxicons ===============-->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--=============== Custom StyleSheet ===============-->
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>PLAZA</title>
+  </head>
+  <body>
+    <!--=============== Header ===============-->
+    <header class="header">
+      <nav class="navbar">
+        <div class="row d-flex container">
+          <a href="main.html" class="logo d-flex">PLA<span class="yellow">ZA</span></a>
+          <ul class="nav-list d-flex">
+            <a href="">ГЛАВНАЯ СТРАНИЦА</a>
+            <span class="close d-flex"><i class="bx bx-x"></i></span>
+          </ul>
+
+          <div class="col d-flex">
+            <a href="shoppingcart.html">
+              <div class="cart-icon d-flex">
+                <i class="bx bx-shopping-bag"></i>
+                <span>0</span>
+              </div>
+            </a>
+            <a href="start.html" class="btn">Выйти</a>
+          </div>
+        </div>
+      </nav>
+
+      <!--=============== Home ===============-->
+      <div class="home">
+        <div class="row container">
+          <div class="col">
+            <h1>
+              Получи блюдо <br />
+              прямо у <br />
+              <span class="color">своей двери</span>
+            </h1>
+            <p>
+              Еда, которая доставляется в нужное время. Модный партнер по доставке еды.<br /> Твой спутник по голоду!
+            </p>
+            <a href="shop.html" class="btn">В меню!</a>
+          </div>
+          <div class="col">
+            <img src="/images/delivery-guy.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--=============== Services ===============-->
+    <section class="section services" id="services">
+      <div class="row container">
+        <div class="col">
+          <h2>Почему мы лучшие в городе</h2>
+          <p>
+            А почему нет? Мы считаем, что да. И все наши знакомые тоже!
+          </p>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/images/meat-icon.svg" alt="" />
+            <h3>
+              Выбери <br />
+              лучшую <br />
+              еду
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="/images/delivery-icon.svg" alt="" />
+            <h3>
+              Получи товар <br />
+              прямо у  <br />
+              твоей двери
+            </h3>
+          </div>
+        </div>
+        <div class="col">
+          <a href="404.html">
+            <div class="card">
+              <img src="/images/phone-icon.svg" alt="" />
+              <h3>
+                У нас <br />
+                400+ отзывов <br />
+                о нашем сервисе
+              </h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== About ===============-->
+    <section class="section about" id="about">
+      <div class="row container">
+        <div class="col">
+          <img src="/images/delivery-guy-2.svg" alt="" />
+        </div>
+        <div class="col">
+          <h2>Взгляните на преимущества, которые мы предлагаем для вас</h2>
+          <p>
+            Хороший сервис означает дружелюбное, гостеприимное обслуживание.
+          </p>
+          <div class="d-grid">
+            <div class="card">
+              <img src="/images/car-icon.svg" alt="" />
+              <h4>Бесплатная доставка</h4>
+              <span>Для всех заказов свыше ₽1000</span>
+            </div>
+            <div class="card">
+              <img src="/images/dollar-icon.svg" alt="" />
+              <h4>Return & Refund</h4>
+              <span>Гарантия возврата денег</span>
+            </div>
+            <div class="card">
+              <img src="/images/security-icon.svg" alt="" />
+              <h4>Безопасный платеж</h4>
+              <span>100% Гарантия Безопасности</span>
+            </div>
+            <div class="card">
+              <img src="/images/time-icon.svg" alt="" />
+              <h4>Быстрая техподдержка</h4>
+              <span>В сети 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=============== Custom JS ===============-->
+    <script type="text/javascript" src="/js/main.js"></script>
+  </body>
+</html>
