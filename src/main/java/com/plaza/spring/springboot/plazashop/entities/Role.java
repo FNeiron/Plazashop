@@ -10,9 +10,6 @@ import java.io.Serializable;
 @Getter @Setter
 public class Role implements Serializable {
     @Id
-    @Column(name = "article")
-    private int article;
-
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "user_id")
     private User user_id;
