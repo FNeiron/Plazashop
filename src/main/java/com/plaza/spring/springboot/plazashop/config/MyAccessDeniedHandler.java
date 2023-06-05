@@ -1,4 +1,4 @@
-package com.plaza.spring.springboot.plazashop.config;
+/*package com.plaza.spring.springboot.plazashop.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,4 +34,4 @@ public class MyAccessDeniedHandler implements AccessDeniedHandler {
         httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + "/403");
 
     }
-}
+}*/

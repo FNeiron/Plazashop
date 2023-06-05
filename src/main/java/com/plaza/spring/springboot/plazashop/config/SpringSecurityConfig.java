@@ -1,4 +1,4 @@
-package com.plaza.spring.springboot.plazashop.config;
+/*package com.plaza.spring.springboot.plazashop.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -66,7 +66,7 @@ public class SpringSecurityConfig {
                 .and()
                 .exceptionHandling().accessDeniedHandler(accessDeniedHandler)
                 .and().headers().frameOptions().disable();
-    }*/
+    }
 
 
     @Autowired
@@ -90,4 +90,4 @@ public class SpringSecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-}
+}*/
